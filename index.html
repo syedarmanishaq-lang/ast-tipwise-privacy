@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Privacy Policy — AST TipWise</title>
+<style>
+  :root {
+    --bg: #F2F2F7; --surface: #FFFFFF; --text: #000000;
+    --text-2: rgba(60, 60, 67, 0.6); --accent: #007AFF;
+    --hairline: rgba(60, 60, 67, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --surface: #1C1C1E; --text: #FFFFFF;
+      --text-2: rgba(235, 235, 245, 0.6); --accent: #0A84FF;
+      --hairline: rgba(84, 84, 88, 0.4);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px; line-height: 1.4; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 32px 16px 64px; }
+  .mark {
+    width: 58px; height: 58px; border-radius: 16px; background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 19px; letter-spacing: -0.5px; margin-bottom: 16px;
+  }
+  h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.8px; margin: 0 0 4px; line-height: 1.1; }
+  .updated { font-size: 13px; color: var(--text-2); margin: 0 0 8px; }
+  .card {
+    background: var(--surface); border-radius: 16px;
+    padding: 20px; margin-top: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+  h2 {
+    font-size: 13px; font-weight: 400; text-transform: uppercase;
+    letter-spacing: -0.1px; color: var(--text-2); margin: 24px 4px 8px;
+  }
+  h2:first-of-type { margin-top: 8px; }
+  p { font-size: 15px; color: var(--text-2); line-height: 1.65; margin: 0; }
+  p b, p strong { color: var(--text); }
+  .foot { font-size: 12.5px; color: var(--text-2); text-align: center; margin: 32px 8px 0; line-height: 1.55; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">AST</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: October 2026</p>
+
+  <div class="card">
+    <h2>The short version</h2>
+    <p>AST TipWise collects <b>no data</b>. The app works fully offline: no accounts, no ads, no analytics, no trackers, no third parties, and no network requests of any kind. There is nothing to opt out of — there is simply nothing collected.</p>
+
+    <h2>Your data stays on your device</h2>
+    <p>Everything you enter — tips, budgets, debts, subscriptions, goals — is stored only in on-device storage on your phone. It never leaves your device. Uninstalling the app or clearing its data permanently removes everything.</p>
+
+    <h2>Home Vault encryption</h2>
+    <p>The optional Home Vault encrypts your entries on your device with AES-256-GCM. Your PIN is used to derive the encryption key (PBKDF2, 100,000 iterations) and is never stored, transmitted, or recoverable. If you forget your vault PIN, your vault data <b>cannot</b> be recovered — there is no reset.</p>
+
+    <h2>Home Wallet &amp; app lock</h2>
+    <p>The optional Home Wallet is protected by a local account (username + password) stored only on your device — passwords are kept as PBKDF2 hashes, never in plain text. Your wallet data is encrypted on-device with AES-256-GCM. There is no email, no cloud backup, and no way for us to recover your data if you forget your credentials without a recovery question.</p>
+
+    <h2>Camera &amp; microphone (optional)</h2>
+    <p>The app <b>can</b> use your camera (receipt scanning) and microphone (voice input for transaction notes) — but <b>only if you tap those features</b>. Permission is requested at that moment, never at install, and you can deny it: the rest of the app keeps working. Photos you attach are compressed on-device and stored only in your encrypted wallet data. Voice input is the one feature that needs internet (your device's speech service); everything else is 100% offline.</p>
+
+    <h2>State tax rates</h2>
+    <p>State sales-tax rates shown in the app are approximate <b>base state rates</b>. County and city taxes vary — always check your receipt for the exact rate.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <b>privacy@ast-tipwise.app</b> (placeholder — replace with a real address before public release).</p>
+
+    <h2>Changes</h2>
+    <p>If this policy ever changes, the updated version will ship inside the app. Because the app is offline, we cannot notify you — check this page after updates.</p>
+  </div>
+
+  <p class="foot">AST TipWise works 100% offline.<br />No account · No tracking · Your data stays on your device.</p>
+</div>
+</body>
+</html>
